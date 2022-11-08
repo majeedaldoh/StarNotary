@@ -19,14 +19,14 @@ contract StarNotary is ERC721 {
      */
     constructor() {
         name_ = "Star Notary Service";
-        symbol_ = "SNS";
+        symbol_ = "SN";
     }
 
     /**
      * @dev Gets the token name
      * @return string representing the token name
      */
-    function name() public pure returns (string memory) {
+    function name() override public view returns (string memory) {
         return name_;
     }
 
@@ -34,7 +34,7 @@ contract StarNotary is ERC721 {
      * @dev Gets the token symbol
      * @return string representing the token symbol
      */
-    function symbol() public pure returns (string memory) {
+    function symbol() public override view returns (string memory) {
         return symbol_;
     }
 
